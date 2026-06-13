@@ -1,0 +1,21 @@
+{
+  "name": "codex-app-proxy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local proxy for Codex App requests with image_generation tool filtering.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "start:provider": "node scripts/start-provider.js",
+    "start:openai": "node scripts/start-provider.js openai",
+    "start:openrouter": "node scripts/start-provider.js openrouter",
+    "start:groq": "node scripts/start-provider.js groq",
+    "start:shared-chat": "node scripts/start-provider.js shared-chat",
+    "start:happycode": "node scripts/start-provider.js happycode",
+    "start:qs": "node scripts/start-provider.js qs",
+    "build:app": "osacompile -o \"$HOME/Applications/Codex App Proxy.app\" scripts/Codex\\ App\\ Proxy.applescript"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

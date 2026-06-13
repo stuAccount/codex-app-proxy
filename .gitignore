@@ -1,0 +1,16 @@
+# Environment files
+.env
+.env.*
+!.env.example
+!.env.openai.example
+!.env.openrouter.example
+!.env.groq.example
+
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+
+# Editor
+*.swp
